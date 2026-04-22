@@ -3,7 +3,7 @@ on: workflow_dispatch
 jobs:
   Print-message:
     runs-on: ubuntu-latest
-  steps:
+steps:
      - name: First Step
       run: echo "Starting the workflow"
      - name: Second Step

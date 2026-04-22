@@ -4,9 +4,9 @@ jobs:
   Print-message:
     runs-on: ubuntu-latest
   steps:
-    - name: First Step
+     - name: First Step
       run: echo "Starting the workflow"
-    - name: Second Step
+     - name: Second Step
       run: echo "Processing data"
-    - name: Third Step
+     - name: Third Step
       run: echo "processing completed"

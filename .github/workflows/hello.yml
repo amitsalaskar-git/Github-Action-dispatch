@@ -40,3 +40,4 @@ jobs:
 
       - name: Seventh Step
         run: echo "${{ secrets.MY_SECRET_NAME }}"
+        

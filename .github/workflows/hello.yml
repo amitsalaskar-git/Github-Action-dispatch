@@ -1,19 +1,12 @@
-name: workflow dispatch
-
-on:
- workflow_dispatch: 
-
- jobs:
- print-message:
- runs-on: ubuntu-latest
-   steps:
-   - name: First Step
-   run: echo "Starting the workflow!"
-
-   - name: Second Step
-   run: echo "Processing Data...."
-
-   -name: Third Step
-   run: echo "Processing completed"
- 
-    
+name: workflow_dispatch
+on: workflow_dispatch
+jobs:
+  Print-message:
+    runs-on: ubuntu-latest
+  steps:
+    - name: First Step
+      run: echo "Starting the workflow"
+    - name: Second Step
+      run: echo "Processing data"
+    - name: Third Step
+      run: echo "processing completed"

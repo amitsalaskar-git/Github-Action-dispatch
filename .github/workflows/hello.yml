@@ -3,10 +3,10 @@ on: workflow_dispatch
 jobs:
   Print-message:
     runs-on: ubuntu-latest
-steps:
+    steps:
      - name: First Step
-      run: echo "Starting the workflow"
+       run: echo "Starting the workflow"
      - name: Second Step
-      run: echo "Processing data"
+       run: echo "Processing data"
      - name: Third Step
-      run: echo "processing completed"
+       run: echo "processing completed"

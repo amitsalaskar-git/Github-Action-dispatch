@@ -27,3 +27,16 @@ jobs:
         env:
           STEP_VAR: "Step_Level_Var"
         run: echo "Step variable is $STEP_VAR"
+
+      - name: Fifth Step
+        env:
+           SECRET_NAME: ${{ secrets.MY_SECRET_NAME }}
+        run: echo "My name from secret is $SECRET_NAME"
+
+      - name: Sixth step
+        env:
+           SECRET_TOKEN: ${{ secrets.MY_SECRET_TOKEN }}
+        run: echo "Token is $SECRET_TOKEN"
+
+      - name: Seventh Step
+        run: echo "${{ secrets.MY_SECRET_NAME }}"

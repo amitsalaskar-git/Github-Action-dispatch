@@ -10,7 +10,7 @@ jobs:
     env:
         Job_Name: Terraform Job
         
-    steps:
+  steps:
      - name: First Step
        run: echo "Starting the workflow"
      - name: Second Step

@@ -1,8 +1,15 @@
 name: workflow_dispatch
 on: workflow_dispatch
+env:
+  My_Name: John Cena
+  My_Env: Learning
+  
 jobs:
   Print-message:
     runs-on: ubuntu-latest
+    env:
+        Job_Name: Terraform Job
+        
     steps:
      - name: First Step
        run: echo "Starting the workflow"
@@ -10,3 +17,6 @@ jobs:
        run: echo "Processing data"
      - name: Third Step
        run: echo "processing completed"
+     - name: Forth Step
+     env:
+          STEP_VAR: "Step_Level_Var"
